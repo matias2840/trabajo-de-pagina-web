@@ -1,0 +1,47 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div>
+        <img src="assets/img/mercylogo.png" alt="logoMERCY" width="100" height="80">
+        </div>
+        <a class="navbar-brand" href="#"><strong>Mercy Developer</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/inicio" routerLinkActive="active">Inicio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/ubicacion" routerLinkActive="active">Ubícanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contáctanos</a>
+            </li>
+          </ul>
+          </div>
+    
+          <div class="row justify-content-end align-items-center">
+          <div class="col-md-8">
+            <input type="text" class="form-control" placeholder="Buscar" required />
+          </div>
+          <div class="col-md-4">
+            <button  class="btn btn-outline-success my-2 my-sm-0" type="enviar">Enviar</button>
+        </div>
+      </div>
+      
+    </nav>
+    
+      <router-outlet></router-outlet>
+    
+      <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="text-center p-3">
+            <img src="assets/img/mercylogo.png" alt="Logotipo de Mercy Developer" style="width: 100px;">
+            <p>Mercy Developer | Teléfono: (+56)924658495</p>
+        </div>
+      </footer>
+    </div>
+    
+<router-outlet />
